@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/paddingLateral"
+    android:paddingTop="@dimen/paddingVertical"
+    android:paddingRight="@dimen/paddingLateral"
+    android:paddingBottom="@dimen/paddingVertical">
+
+    <EditText
+        android:id="@+id/txtAsignaturas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/formularioEspacioCampos"
+        android:hint="@string/agregarAsignatura" />
+
+    <EditText
+        android:id="@+id/txtHoraInicio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="time"
+        android:layout_marginBottom="@dimen/formularioEspacioCampos"
+        android:hint="@string/horaInicio" />
+
+    <EditText
+        android:id="@+id/txtHoraSalida"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/formularioEspacioCampos"
+        android:hint="@string/horaSalida" />
+
+    <EditText
+        android:id="@+id/txtSalon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/formularioEspacioCampos"
+        android:hint="@string/formularioSalon" />
+
+    <Button
+        android:id="@+id/btnAfirmativo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/btnPositivo"
+        android:text="@string/agregar" />
+
+</LinearLayout>

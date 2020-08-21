@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/paddingLateral"
+    android:paddingTop="@dimen/paddingVertical"
+    android:paddingRight="@dimen/paddingLateral"
+    android:paddingBottom="@dimen/paddingVertical">
+
+    <EditText
+        android:id="@+id/txtAsignatura"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/formularioEspacioCampos"
+        android:hint="@string/agregarAsignatura"
+        android:inputType="text"
+        android:autofillHints="" tools:targetApi="o"/>
+
+
+    <EditText
+        android:id="@+id/txtTitulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/formularioEspacioCampos"
+        android:hint="@string/titulo"
+        android:inputType="text"
+        android:autofillHints="" tools:targetApi="o"/>
+
+    <EditText
+        android:id="@+id/txtFechaEntrega"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/formularioEspacioCampos"
+        android:hint="@string/fechaEntrega"
+        android:inputType="date"
+        android:autofillHints="" tools:targetApi="o"/>
+
+    <Spinner
+        android:id="@+id/txtTipo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/formularioEspacioCampos"
+        android:hint="@string/actividad"
+        android:autofillHints="" tools:targetApi="o"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnAfirmativo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="0dp"
+            android:text="@string/agregar" />
+
+        <Button
+            android:id="@+id/btnNegativo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_toStartOf="@+id/btnAfirmativo"
+            android:text="@string/cancelar" />
+    </RelativeLayout>
+
+</LinearLayout>

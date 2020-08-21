@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".vista.MainActivity"
+    android:background="@color/colorBlanco">
+
+    <TextView
+        android:id="@+id/tvTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="8dp"
+        android:textColor="@color/colorAccent"
+        android:text="@string/app_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/btnAsignaturas"
+        android:layout_width="@dimen/anchoBotonMenu"
+        android:layout_height="@dimen/altoBotonMenu"
+        android:layout_marginStart="@dimen/distanciaHorizontalBoton"
+        android:layout_marginTop="@dimen/distanciaVerticalBoton"
+        android:background="@drawable/redondeo"
+        android:contentDescription="@string/decripcionMenuIcono"
+        android:onClick="navegar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitulo"
+        app:srcCompat="@drawable/ic_menu_asignaturas_24px" />
+
+    <ImageButton
+        android:id="@+id/btnCalculadora"
+        android:layout_width="@dimen/altoBotonMenu"
+        android:layout_height="@dimen/anchoBotonMenu"
+        android:layout_marginTop="@dimen/distanciaVerticalBoton"
+        android:layout_marginEnd="@dimen/distanciaHorizontalBoton"
+        android:background="@drawable/redondeo"
+        android:contentDescription="@string/decripcionMenuIcono"
+        android:onClick="navegar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitulo"
+        app:srcCompat="@drawable/ic_menu_calculadora_24px" />
+
+    <TextView
+        android:id="@+id/tvAsignaturas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/distanciaVerticalTextView"
+        android:text="@string/menuAsignatura"
+        android:textColor="@color/colorAccente"
+        app:layout_constraintEnd_toEndOf="@+id/btnAsignaturas"
+        app:layout_constraintStart_toStartOf="@+id/btnAsignaturas"
+        app:layout_constraintTop_toBottomOf="@+id/btnAsignaturas" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/distanciaVerticalTextView"
+        android:text="@string/menuCalculadora"
+        android:textColor="@color/colorAccente"
+        app:layout_constraintEnd_toEndOf="@+id/btnCalculadora"
+        app:layout_constraintStart_toStartOf="@+id/btnCalculadora"
+        app:layout_constraintTop_toBottomOf="@+id/btnCalculadora" />
+
+    <ImageButton
+        android:id="@+id/btnCalendario"
+        android:layout_width="@dimen/anchoBotonMenu"
+        android:layout_height="@dimen/altoBotonMenu"
+        android:layout_marginStart="@dimen/distanciaHorizontalBoton"
+        android:layout_marginTop="@dimen/distanciaVerticalBoton"
+        android:background="@drawable/redondeo"
+        android:contentDescription="@string/decripcionMenuIcono"
+        android:onClick="navegar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvAsignaturas"
+        app:srcCompat="@drawable/ic_menu_calendario" />
+
+    <ImageButton
+        android:id="@+id/btnAgenda"
+        android:layout_width="@dimen/anchoBotonMenu"
+        android:layout_height="@dimen/altoBotonMenu"
+        android:layout_marginTop="@dimen/distanciaVerticalBoton"
+        android:layout_marginEnd="@dimen/distanciaHorizontalBoton"
+        android:background="@drawable/redondeo"
+        android:contentDescription="@string/decripcionMenuIcono"
+        android:onClick="navegar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView13"
+        app:srcCompat="@drawable/ic_menu_agenda" />
+
+    <TextView
+        android:id="@+id/tvCalendario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/distanciaVerticalTextView"
+        android:text="@string/menuHorario"
+        android:textColor="@color/colorAccente"
+        app:layout_constraintEnd_toEndOf="@+id/btnCalendario"
+        app:layout_constraintStart_toStartOf="@+id/btnCalendario"
+        app:layout_constraintTop_toBottomOf="@+id/btnCalendario" />
+
+    <TextView
+        android:id="@+id/tvAgenda"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/distanciaVerticalTextView"
+        android:text="@string/menuAgenda"
+        android:textColor="@color/colorAccente"
+        app:layout_constraintEnd_toEndOf="@+id/btnAgenda"
+        app:layout_constraintStart_toStartOf="@+id/btnAgenda"
+        app:layout_constraintTop_toBottomOf="@+id/btnAgenda" />
+
+    <ImageButton
+        android:id="@+id/btnProfesores"
+        android:layout_width="@dimen/altoBotonMenu"
+        android:layout_height="@dimen/anchoBotonMenu"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/redondeo"
+        android:contentDescription="@string/decripcionMenuIcono"
+        android:onClick="navegar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvCalendario"
+        app:srcCompat="@drawable/ic_menu_person_24px" />
+
+    <ImageButton
+        android:id="@+id/btnEventos"
+        android:layout_width="@dimen/altoBotonMenu"
+        android:layout_height="@dimen/anchoBotonMenu"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/redondeo"
+        android:contentDescription="@string/decripcionMenuIcono"
+        android:onClick="navegar"
+        app:layout_constraintEnd_toStartOf="@+id/btnAnotaciones"
+        app:layout_constraintStart_toEndOf="@+id/btnProfesores"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:srcCompat="@drawable/ic_menu_person_24px" />
+
+    <ImageButton
+        android:id="@+id/btnAnotaciones"
+        android:layout_width="@dimen/anchoBotonMenu"
+        android:layout_height="@dimen/altoBotonMenu"
+        android:layout_marginTop="@dimen/distanciaVerticalBoton"
+        android:layout_marginEnd="@dimen/distanciaHorizontalBoton"
+        android:background="@drawable/redondeo"
+        android:contentDescription="@string/decripcionMenuIcono"
+        android:onClick="navegar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvAgenda"
+        app:srcCompat="@drawable/ic_menu_notes_24px" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/distanciaVerticalTextView"
+        android:text="@string/menuProfesor"
+        android:textColor="@color/colorAccente"
+        app:layout_constraintEnd_toEndOf="@+id/btnProfesores"
+        app:layout_constraintStart_toStartOf="@+id/btnProfesores"
+        app:layout_constraintTop_toBottomOf="@+id/btnProfesores" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/distanciaVerticalTextView"
+        android:text="@string/menuAnotaciones"
+        android:textColor="@color/colorAccente"
+        app:layout_constraintEnd_toEndOf="@+id/btnAnotaciones"
+        app:layout_constraintStart_toStartOf="@+id/btnAnotaciones"
+        app:layout_constraintTop_toBottomOf="@+id/btnAnotaciones" />
+
+</android.support.constraint.ConstraintLayout>

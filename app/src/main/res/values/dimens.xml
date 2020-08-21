@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="anchoBotonMenu">70dp</dimen>
+    <dimen name="altoBotonMenu">70dp</dimen>
+    <dimen name="distanciaVerticalBoton">20dp</dimen>
+    <dimen name="distanciaHorizontalBoton">50dp</dimen>
+    <dimen name="distanciaVerticalTextView">5dp</dimen>
+    <dimen name="anchoImgMenu">45dp</dimen>
+    <dimen name="altoImgMenu">45dp</dimen>
+    <dimen name="alturaBarra">80dp</dimen>
+
+    <!-- tamaño de fuentes -->
+    <dimen name="nombreAsignaturaListado">15sp</dimen>
+    <dimen name="espacioSuperiorFormulario">16dp</dimen>
+    <dimen name="espacioLateralFormulario">16dp</dimen>
+    <dimen name="altoImgFormulario">24dp</dimen>
+    <dimen name="anchoImgFormulario">24dp</dimen>
+    <dimen name="formularioEspacioIconoTxt">10dp</dimen>
+    <dimen name="formularioEspacioCampos">15dp</dimen>
+    <dimen name="espacioBordeCardView">10dp</dimen>
+    <dimen name="txtAnchoPorcentaje">54dp</dimen>
+    <dimen name="txtAnchoNota">54dp</dimen>
+    <dimen name="paddingCardView">16dp</dimen>
+    <dimen name="espacioDias">10dp</dimen>
+    <dimen name="distanciaFab">40dp</dimen>
+    <dimen name="imgListaProfesor">40dp</dimen>
+    <dimen name="marginImgDatos">10dp</dimen>
+    <dimen name="paddingLateral">16dp</dimen>
+    <dimen name="paddingVertical">10dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="appbar_padding">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="appbar_padding_top">8dp</dimen>
+    <dimen name="paddingLista">5dp</dimen>
+</resources>

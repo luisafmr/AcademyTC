@@ -1,0 +1,24 @@
+project(':Dao') {
+
+    apply plugin: 'java-library'
+    apply plugin: 'application'
+
+    mainClassName = 'com.example.dao.MyClass'
+    outputDatabase = 'classes/'
+
+    dependencies {
+        implementation fileTree(dir: 'libs', include: ['*.jar'])
+        implementation 'org.greenrobot:greendao-generator:3.2.0'
+    }
+
+    task createDirs{
+        def dir = file(outputDatabase)
+        dir.mkdirs()
+    }
+    run{
+        args outputDatabase
+    }
+}
+
+sourceCompatibility = "7"
+targetCompatibility = "7"

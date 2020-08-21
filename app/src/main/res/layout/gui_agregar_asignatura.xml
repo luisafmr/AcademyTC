@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/espacioBordeCardView">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/formularioEspacioCampos"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/espacioLateralFormulario"
+                android:paddingRight="@dimen/espacioLateralFormulario">
+
+                <ImageView
+                    android:id="@+id/imgAsigntarura"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="@dimen/formularioEspacioIconoTxt"
+                    android:contentDescription="@string/decripcionFormularioIcono"
+                    app:srcCompat="@drawable/ic_formulario_asignatura_24px" />
+
+                <EditText
+                    android:id="@+id/txtAsignaturas"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:autofillHints=""
+                    android:hint="@string/formularioAsignaturas"
+                    android:inputType=""
+                    tools:targetApi="o" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/formularioEspacioCampos"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/espacioLateralFormulario"
+                android:paddingRight="@dimen/espacioLateralFormulario">
+
+                <ImageView
+                    android:id="@+id/imgProfesor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="@dimen/formularioEspacioIconoTxt"
+                    android:contentDescription="@string/decripcionFormularioIcono"
+                    app:srcCompat="@drawable/ic_formulario_profesor_24px" />
+
+                <EditText
+                    android:id="@+id/txtProfesor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:autofillHints=""
+                    android:hint="@string/formularioProfesor"
+                    android:inputType=""
+                    tools:targetApi="o" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/formularioEspacioCampos"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/espacioLateralFormulario"
+                android:paddingRight="@dimen/espacioLateralFormulario">
+
+                <ImageView
+                    android:id="@+id/imgColor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="@dimen/formularioEspacioIconoTxt"
+                    android:contentDescription="@string/decripcionFormularioIcono"
+                    app:srcCompat="@drawable/ic_formulario_color_24px" />
+
+                <EditText
+                    android:id="@+id/txtColor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:autofillHints=""
+                    android:hint="@string/formularioColor"
+                    android:inputType=""
+                    tools:targetApi="o" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/formularioEspacioCampos"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/espacioLateralFormulario"
+                android:paddingRight="@dimen/espacioLateralFormulario">
+
+                <ImageView
+                    android:id="@+id/imgDetalles"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="@dimen/formularioEspacioIconoTxt"
+                    android:contentDescription="@string/decripcionFormularioIcono"
+                    app:srcCompat="@drawable/ic_formulario_detalles_24px" />
+
+                <EditText
+                    android:id="@+id/txtDetalles"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:autofillHints=""
+                    android:hint="@string/formularioDetalles"
+                    android:inputType=""
+                    tools:targetApi="o" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnGuardar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/btnGuardar"
+                android:theme="@style/btnPositivo"/>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>
